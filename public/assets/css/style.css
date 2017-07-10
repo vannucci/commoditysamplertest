@@ -1,0 +1,83 @@
+#orange {
+	background-color: #ffcc66;
+	min-height: 50px;
+}
+
+#red {
+	border-top: : 2px solid white;
+	border-bottom: 2px solid white;
+	background-color: #d0491c;
+	min-height: 15px;
+}
+
+#aboutUsText {
+
+}
+
+#maintitle {
+	color: #d0491c;
+	font-size: 32px;
+	margin: 0px;
+}
+
+button {
+	background-color: #ffcc66;
+	margin: 0 1px;
+	height: 45px;
+}
+
+.hide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+
+#navigation {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 2px 0px;
+
+}
+
+#motto {
+	font-family: 'Bilbo', cursive;
+	margin: 0;
+	height: 45px;
+
+}
+
+#icon {
+	display: block;
+}
+
+.middlerow {
+	border-top: 2px solid gray;
+	min-height: 500px;
+}
+
+#toprow, #middlerow, #bottomrow {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#welcome {
+	font-family: 'Bilbo', cursive;
+}
+
+#baseline{
+	font-family: 'Bilbo', cursive;
+	font-size: 2.5rem;
+	float: right;
+
+}
+
+img {
+	display: inline-block;
+}
+
+#rightColumnContent {
+	vertical-align: bottom;
+}
