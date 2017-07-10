@@ -23,8 +23,8 @@ app.use(methodOverride("_method"));
 //app.set("view engine", "handlebars");
 
 //Import routes
-//var routes = require("./controllers/burgerController");
+var routes = require("./controllers/comsampcontroller");
 
-//app.use("/", routes);
+app.use("/", routes);
 
 app.listen(port);
