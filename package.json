@@ -10,13 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "express": "^4.15.3",
+    "express": "4.15.3",
     "method-override": "^2.3.9",
     "nodemon": "^1.11.0",
     "path": "^0.12.7"
   },
   "engines": {
-    "npm":"5.1.0",
+    "npm": "5.1.0",
     "node": "v7.10.0"
   }
 }
