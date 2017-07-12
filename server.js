@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const path = require('path');
 
-var port = 3000;
+var port = 8080;
 
 var app = express();
 
@@ -27,4 +27,6 @@ var routes = require("./controllers/comsampcontroller");
 
 app.use("/", routes);
 
-app.listen(port);
+app.listen(port, function() {
+	console.log("Application is running and listening on http://localhost: " + port);
+});
