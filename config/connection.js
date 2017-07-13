@@ -1,5 +1,7 @@
 var Sequelize = require("sequelize");
 
+const userdata = require("../userdata");
+
 //Instantiate connection
 var sequelize = new Sequelize("orders", "root", "12345", {
 	host: "localhost",
@@ -11,6 +13,9 @@ var sequelize = new Sequelize("orders", "root", "12345", {
 	}
 });
 
+
+//const sequelize = new Sequelize(userdata.uri);
+
 sequelize
 	.authenticate()
 	.then(() => {
@@ -18,6 +23,6 @@ sequelize
 	})
 	.catch(err => {
 		console.error('Unable to connect to database error: ' + err);
-	});
+	})
 
 module.exports = sequelize;
