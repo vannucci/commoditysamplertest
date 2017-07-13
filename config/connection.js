@@ -3,7 +3,7 @@ var Sequelize = require("sequelize");
 const userdata = require("../userdata");
 
 //Instantiate connection
-var sequelize = new Sequelize("orders", "root", "12345", {
+var sequelize = new Sequelize("orders", "root", "helloworld", {
 	host: "localhost",
 	dialect: "mysql",
 	pool: {

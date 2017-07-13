@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 	});
 
-	$('#orderButton').on('click', function(){
+	/*$('#orderButton').on('click', function(){
 		home.addClass('hide');
 		contact.addClass('hide');
 		services.addClass('hide');
@@ -52,6 +52,7 @@ $(document).ready(function() {
 		order.removeClass('hide');
 
 	});
+	*/
 
 
 });

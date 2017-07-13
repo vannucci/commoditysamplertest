@@ -3,6 +3,13 @@ var router = express.Router();
 
 var Order = require("../models/order.js");
 
+router.get('/orders', function(req,res) {
+	res.render('index', function(err,html){
+		if(err) console.log("Failed to render error: " + err);
+		res.send(html);
+	})
+})
+
 router.post('/api/orders', function(req, res) {
 	console.log("Order Data: ");
 	console.log(req.body);
