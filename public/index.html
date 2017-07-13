@@ -35,6 +35,13 @@
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
 
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script
+  src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"
+  type="text/javascript"></script>
+
+
 </head>
 
 <body>
@@ -50,7 +57,7 @@
 			<div class="row">
 				<div class="container">
 					<div class="twelve columns" id="navigation">
-						<button id="homeButton">Home</button><button id="ourServicesButton">Our Services</button><button  id="aboutUsButton">About Us</button><button  id="contactButton">Contact</button>
+						<button id="homeButton">Home</button><button id="ourServicesButton">Our Services</button><button  id="aboutUsButton">About Us</button><button  id="contactButton">Contact</button><button  id="orderButton">Order</button>
 					</div>
 				</div>
 			</div>
@@ -149,6 +156,30 @@
 				<img class="icon" src="assets/images/logo.jpg" alt="Logo" >
 
 		</div>
+
+		<div class="row middlerow hide" id="orderSubmitDiv">
+
+			<div class="twelve columns">
+			<h3> Submit an order </h3>
+			<form action="/api/orders" method="POST">
+				Name: <br>
+				<input type="text" name="name" id="name"> <br>
+				Order: <br>
+				<textarea name="order" rows="50" cols="100" id="orderBody"></textarea><br>
+				Due Date: <br>
+				<input type="date" name="dueDate" id="dueDate"> <br>
+				<input type="submit" id="orderSubmitButton"> <br>
+
+			</form>
+
+			<p id="orderSubmitStatus"></p>
+
+			</div>
+				<img class="icon" src="assets/images/logo.jpg" alt="Logo" >
+
+		</div>
+
+
 	</div>
 
 	<div class="row" id="bottomrow">

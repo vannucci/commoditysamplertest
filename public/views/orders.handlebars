@@ -1,0 +1,21 @@
+		<div class="row middlerow hide" id="orderSubmitDiv">
+
+			<div class="twelve columns">
+			<h3> Submit an order </h3>
+			<form action="/api/orders" method="POST">
+				Name: <br>
+				<input type="text" name="name" id="name"> <br>
+				Order: <br>
+				<textarea name="order" rows="50" cols="100" id="orderBody"></textarea><br>
+				Due Date: <br>
+				<input type="date" name="dueDate" id="dueDate"> <br>
+				<input type="submit" id="orderSubmitButton"> <br>
+
+			</form>
+
+			<p id="orderSubmitStatus"></p>
+
+			</div>
+				<img class="icon" src="assets/images/logo.jpg" alt="Logo" >
+
+		</div>

@@ -1,32 +1,57 @@
+var about = $('#aboutUsDiv');
+var contact = $('#contactDiv');
+var home = $('#homeDiv');
+var services = $('#ourServicesDiv');
+var order = $('#orderSubmitDiv');
+
+
 $(document).ready(function() {
+
 	$('#aboutUsButton').on('click', function(){
-		$('#homeDiv').addClass('hide');
-		$('#contactDiv').addClass('hide');
-		$('#ourServicesDiv').addClass('hide');
-		$('#aboutUsDiv').removeClass('hide');
+		home.addClass('hide');
+		contact.addClass('hide');
+		services.addClass('hide');
+		about.removeClass('hide');
+		order.addClass('hide');
+
 
 	});
 	$('#contactButton').on('click', function(){
-		$('#homeDiv').addClass('hide');
-		$('#contactDiv').removeClass('hide');
-		$('#ourServicesDiv').addClass('hide');
-		$('#aboutUsDiv').addClass('hide');
+		home.addClass('hide');
+		contact.removeClass('hide');
+		services.addClass('hide');
+		about.addClass('hide');
+		order.addClass('hide');
+
 
 	});
 	$('#ourServicesButton').on('click', function(){
-		$('#homeDiv').addClass('hide');
-		$('#contactDiv').addClass('hide');
-		$('#ourServicesDiv').removeClass('hide');
-		$('#aboutUsDiv').addClass('hide');
+		home.addClass('hide');
+		contact.addClass('hide');
+		services.removeClass('hide');
+		about.addClass('hide');
+		order.addClass('hide');
+
 
 	});
 
 	$('#homeButton').on('click', function(){
-		$('#homeDiv').removeClass('hide');
-		$('#contactDiv').addClass('hide');
-		$('#ourServicesDiv').addClass('hide');
-		$('#aboutUsDiv').addClass('hide');
+		home.removeClass('hide');
+		contact.addClass('hide');
+		services.addClass('hide');
+		about.addClass('hide');
+		order.addClass('hide');
 
 	});
+
+	$('#orderButton').on('click', function(){
+		home.addClass('hide');
+		contact.addClass('hide');
+		services.addClass('hide');
+		about.addClass('hide');
+		order.removeClass('hide');
+
+	});
+
 
 });
