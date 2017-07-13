@@ -3,12 +3,33 @@ var router = express.Router();
 
 var Order = require("../models/order.js");
 
-router.get('/orders', function(req,res) {
-	res.render('index', function(err,html){
-		if(err) console.log("Failed to render error: " + err);
-		res.send(html);
+/*
+  app.get("/api/all", function(req, res) {
+
+    // Finding all Chirps, and then returning them to the user as JSON.
+    // Sequelize queries are aynchronous, which helps with percieved speed.
+    // If we want something to be guaranteed to happen after the query, we'll use
+    // the .then function
+    Chirp.findAll({}).then(function(results) {
+      // results are available to us inside the .then
+      res.json(results);
+    });
+
+  });
+
+*/
+
+router.get("/admin", function(req,res) {
+	Order.findAll({})
+	.then(function(results) {
+		res.json(results);
 	})
 })
+
+router.get("/orders", function(req,res) {
+	res.render('orders');
+});
+
 
 router.post('/api/orders', function(req, res) {
 	console.log("Order Data: ");
@@ -21,7 +42,7 @@ router.post('/api/orders', function(req, res) {
 		due: req.body.dueDate,
 		complete: 0
 	}).then(function(results) {
-		res.redirect('/');
+		res.redirect('/orders');
 		res.end();
 	});
 });

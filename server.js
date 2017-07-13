@@ -17,14 +17,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(methodOverride("_method"));
 
+//Set handlebars, set handle
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
-
-//Set handlebars, set handle
-//var exphbs = require('express-handlebars');
-
-//app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-//app.set("view engine", "handlebars");
 
 //Import routes
 var routes = require("./controllers/comsampcontroller");

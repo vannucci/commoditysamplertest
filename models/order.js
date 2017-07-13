@@ -26,6 +26,6 @@ var Order = connection.define("order", {
 	timestamps: false
 });
 
-Order.sync({force: true});
+Order.sync({force: false});
 
 module.exports = Order;
